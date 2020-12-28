@@ -1,12 +1,11 @@
 import GetQuote from '../../util/get-quote';
 
-function Paragraph() {
+function P() {
   const quotes = GetQuote();
   const q = [];
   for (let quote of quotes) {
     q.push(<p>{quote}</p>);
   }
-
 
   return (
     <div>
@@ -15,4 +14,4 @@ function Paragraph() {
   );
 }
 
-export default Paragraph;
+export { P };
