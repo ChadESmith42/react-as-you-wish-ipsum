@@ -66,7 +66,8 @@ function GetQuote() {
         `You only think I guessed wrong! That's what's so funny! I switched glasses when your back was turned! Ha ha! You fool! You fell victim to one of the classic blunders - the most famous of which is "never get involved in a land war in Asia" - but only slightly less well-known is this: "Never go in against a Sicilian when death is on the line!" Ha ha ha ha ha ha ha! Ha ha ha ha ha ha ha! Ha ha ha...`,
         `And to think, all that time it was your cup that was poisoned.`,
         `They were both poisoned. I spent the last few years building up an immunity to iocane powder.`,
-      ][
+      ],
+      [
         `That Vizzini, he can *fuss*.`,
         `Fuss, fuss... I think he like to scream at *us*.`,
         `Probably he means no *harm*.`,
@@ -77,7 +78,7 @@ function GetQuote() {
         `Fezzik, are there rocks ahead?`,
         `If there are, we all be dead.`,
         `No more rhymes now, I mean it.`,
-        `Anybody want a peanut? DYEEAAHHHHHH!`
+        `Anybody want a peanut? DYEEAAHHHHHH!`,
       ],
       [
         `Surrender.`,
@@ -101,11 +102,7 @@ function GetQuote() {
         `Mawage. Mawage is wot bwings us togeder today. Mawage, that bwessed awangment, that dweam wifin a dweam…`,
       ],
       [`And wuv, tru wuv, will fowow you foweva…`],
-      [
-        `So tweasure your wuv.`,
-        `Skip to the end.`,
-        `Have you the wing?`
-      ],
+      [`So tweasure your wuv.`, `Skip to the end.`, `Have you the wing?`],
       [
         `...and do you, Pwincess Buwwercup…`,
         `Man and wife. Say man and wife.`,
@@ -162,9 +159,7 @@ function GetQuote() {
         `I do not mean to pry, but you don't by any chance happen to have six fingers on your right hand?`,
         `Do you always begin conversations this way?`,
       ],
-      [
-        `I've seen worse.`
-      ],
+      [`I've seen worse.`],
       [
         `We'll never succeed. We may as well die here.`,
         `No, no. We have already succeeded. I mean, what are the three terrors of the Fire Swamp? One, the flame spurt - no problem. There's a popping sound preceding each; we can avoid that. Two, the lightning sand, which you were clever enough to discover what that looks like, so in the future we can avoid that too.`,
@@ -226,9 +221,7 @@ function GetQuote() {
         `I will never doubt again.`,
         `There will never be a need.`,
       ],
-      [
-        `You rush a miracle man, you get rotten miracles.`
-      ],
+      [`You rush a miracle man, you get rotten miracles.`],
       [
         `You are using Bonetti's Defense against me, ah?`,
         `I thought it fitting considering the rocky terrain.`,
@@ -249,13 +242,8 @@ function GetQuote() {
         `See, didn't I tell you she'd never marry that rotten Humperdinck?`,
         `Yes, you're very smart. Shut up.`,
       ],
-      [
-        `Why won't my arms move?`,
-        `You've been mostly-dead all day.`
-      ],
-      [
-        `INCONCEIVABLE!`
-      ],
+      [`Why won't my arms move?`, `You've been mostly-dead all day.`],
+      [`INCONCEIVABLE!`],
       [
         `I do not envy you the headache you will have when you awake. But for now, rest well and dream of large women.`,
       ],
@@ -268,9 +256,7 @@ function GetQuote() {
         `There is but one working castle gate, and... and it is guarded by 60 men.`,
         `And our assets? Your brains, Fezzik's strength, my steel.`,
       ],
-      [
-        `No one would surrender to the Dread Pirate Westley.`
-      ],
+      [`No one would surrender to the Dread Pirate Westley.`],
       [
         `A book?`,
         `That's right. When I was your age, television was called books. And this is a special book. It was the book my father used to read to me when I was sick, and I used to read it to your father. And today I'm gonna read it to you.`,
@@ -316,12 +302,9 @@ function GetQuote() {
         `Pick up one of those rocks, get behind a boulder, in a few minutes the man in black will come running around the bend, the minute his head is in view, hit it with the rock.`,
         `My way's not very sportsman-like.`,
       ],
+      [`Can you move at all?`, `Move? You're alive. If you want I can fly.`],
       [
-        `Can you move at all?`,
-        `Move? You're alive. If you want I can fly.`
-      ],
-      [
-        `Since the invention of the kiss, there have been five kisses rated the most passionate, the most pure. This one left them all behind. The end.`
+        `Since the invention of the kiss, there have been five kisses rated the most passionate, the most pure. This one left them all behind. The end.`,
       ],
       [
         `You never said anything about killing anyone.`,
@@ -365,15 +348,11 @@ function GetQuote() {
         `Humiliations galore!`,
         `HA-HA-HA! *That* is a noble cause. Give me the sixty-five, I'm on the job.`,
       ],
-      [
-        `Jump in after her!`,
-        `I don't swim.`,
-        `I only dog paddle.`,
-        `AGGHH!`
-      ],
+      [`Jump in after her!`, `I don't swim.`, `I only dog paddle.`, `AGGHH!`],
       [
         `I challenge you to a battle of wits.`,
-        `For the Princess? To the death? I accept!`],
+        `For the Princess? To the death? I accept!`,
+      ],
       [
         `Your princess is quite a winning creature. A trifle simple, perhaps. Her appeal is undeniable.`,
         `I know, the people are quite taken with her. It's odd, but when I hired Vizzini to have her murdered on our engagement day, I thought that was clever. But it's going to be so much more moving when I strangle her on our wedding night. Once Guilder is blamed, the nation will truly be outraged - they'll demand we go to war.`,
@@ -405,7 +384,7 @@ function GetQuote() {
         `You must be that little Spanish brat I taught a lesson to all those years ago. You've been chasing me your whole life only to fail now? I think that's about the worst thing I've ever heard. How marvelous.`,
       ],
       [
-        `I am waiting for you, Vizzini! You told me to go back to the beginning... so I have. his is where I am, this is where I'll stay. I will not be moved!`,
+        `I am waiting for you, Vizzini! You told me to go back to the beginning... so I have. This is where I am, this is where I'll stay. I will not be moved!`,
       ],
       [
         `Beautiful isn't it? It took me half a lifetime to invent it. I'm sure you've discovered my deep and abiding interest in pain. Presently I'm writing the definitive work on the subject, so I want you to be totally honest with me on how the machine makes you feel. This being our first try, I'll use the lowest setting.`,
@@ -424,17 +403,13 @@ function GetQuote() {
       [
         `She is alive, or was an hour ago. If she is otherwise when I find her I shall be very put out.`,
       ],
-      [
-        `My men are here! I am here! But soon *you* will not be here!`
-      ],
+      [`My men are here! I am here! But soon *you* will not be here!`],
       [
         `That's a miracle pill?`,
         `The chocolate coating makes it go down easier. But you have to wait fifteen minutes for full potency. And you shouldn't go in swimming after, for at least, what?`,
         `A half an hour.`,
       ],
-      [
-        `Please consider me as an alternative to suicide.`
-      ],
+      [`Please consider me as an alternative to suicide.`],
       [
         `Do you know what that sound is, Highness? Those are the shrieking eels! If you don't believe me, just wait. They always grow louder when they're about to feed on human flesh! If you swim back now I promise no harm will come to you... I doubt you'll get such an offer from the eels.`,
       ],
