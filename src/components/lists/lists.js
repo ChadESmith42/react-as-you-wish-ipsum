@@ -1,26 +1,34 @@
+import GetQuote from '../../util/get-quote';
+
 function UL() {
-  const quotes = ['Quote 1', 'Quote 2', 'Quote 3', 'Quote 4'];
+  const quotes = listQuotes();
 
   return (
     <ul>
-      <li>{quotes[0]}</li>
-      <li>{quotes[1]}</li>
-      <li>{quotes[2]}</li>
-      <li>{quotes[3]}</li>
+      {quotes.map(quotes => {
+        return (<li>{quotes}</li>);
+      })}
     </ul>
   );
 }
 
 function OL() {
-  const quotes = ['Quote 1', 'Quote 2', 'Quote 3', 'Quote 4'];
+  const quotes = listQuotes();
   return (
     <ol>
-      <li>{quotes[0]}</li>
-      <li>{quotes[1]}</li>
-      <li>{quotes[2]}</li>
-      <li>{quotes[3]}</li>
+      {quotes.map(quotes => {
+        return (<li>{quotes}</li>);
+      })}
     </ol>
   );
+}
+
+function listQuotes() {
+  const quotes = GetQuote();
+  if (quotes.length < 3) {
+     return listQuotes();
+  }
+  return quotes;
 }
 
 export { UL, OL };
