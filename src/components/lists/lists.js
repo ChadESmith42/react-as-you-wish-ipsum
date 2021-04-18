@@ -1,4 +1,4 @@
-import GetQuote from '../../util/get-quote';
+import Quotes from '../../util/get-quote';
 
 function UL() {
   const quotes = listQuotes();
@@ -24,7 +24,7 @@ function OL() {
 }
 
 function listQuotes() {
-  const quotes = GetQuote();
+  const quotes = Quotes.GetQuote();
   if (quotes.length < 3) {
      return listQuotes();
   }

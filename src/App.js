@@ -2,6 +2,7 @@ import './App.css';
 import { P } from './components/paragraph/Paragraph';
 import { H1, H2, H3, H4, H5, H6 } from './components/header/Header';
 import { UL, OL } from './components/lists/Lists';
+import Button from './components/button/Button';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         <article>
           <h2>Paragraphs</h2>
           <P />
+        </article>
+        <article>
+          <h2>Buttons</h2>
+          <Button />
         </article>
         <article>
           <h2>Lists</h2>
