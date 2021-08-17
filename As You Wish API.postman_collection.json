@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "8caea1ca-6e7c-4c5a-8065-83b63ab691ab",
+		"name": "As You Wish API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /quotes/id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const quote = pm.response.json()[0];",
+							"",
+							"console.log(quote);",
+							"",
+							"pm.environment.set(\"likes\", quote.likes);",
+							"",
+							"pm.test('Returns quote.id of 1', () => {",
+							"    pm.expect(quote.id).to.equal(1);",
+							"})",
+							"",
+							"pm.test(`Returns 'You killed my father' quote.`, () => {",
+							"    pm.expect(quote.quote).to.contain('You killed my father.');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/quotes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"quotes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /quotes/id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"const previousLikes = pm.environment.get(\"likes\");",
+							"",
+							"const response = pm.sendRequest('http://localhost:5000/quotes/1', (err, response) => {",
+							"    const likes = response.json()[0].likes;",
+							"    pm.test('Result increments likes vote by +1', () => {",
+							"        pm.expect(likes).to.equal(previousLikes + 1);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"vote\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/quotes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"quotes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /quotes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = pm.response.body;",
+							"",
+							"pm.test('Returns 108 quotes in an array', () => {",
+							"    pm.expect(pm.response.json().length).to.equal(108);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/quotes/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"quotes",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
